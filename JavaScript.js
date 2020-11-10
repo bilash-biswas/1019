@@ -1,0 +1,11 @@
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+input = input.replace('\n',' ');
+var lines = input.split(' ');
+var a = parseInt(lines.shift());
+var b,c,d,e;
+b = parseInt(a / 3600);
+c = a - b * 3600;
+d = parseInt(c / 60);
+e = c - d * 60;
+console.log(b + ":" + d + ":" + e);
